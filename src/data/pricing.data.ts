@@ -44,7 +44,7 @@ export const pricingData: PricingPackage[] = [
       { label: 'Gratis Domain .com 1 Tahun', included: true },
       { label: 'Animasi Scroll & Interaktivitas', included: true },
       { label: 'Panel Admin — Ubah Konten Sendiri', included: true },
-      { label: 'Garansi Pemeliharaan 1 Bulan', included: true },
+      { label: 'Garansi Pemeliharaan 3 Bulan', included: true },
     ],
   },
   {
@@ -64,7 +64,7 @@ export const pricingData: PricingPackage[] = [
       { label: 'Revisi Tidak Terbatas', included: true },
       { label: 'Domain & Hosting (diskusikan)', included: true },
       { label: 'Animasi Scroll & Interaktivitas', included: true },
-      { label: 'Panel Admin — Kelola Konten Sendiri ✨', included: true },
+      { label: 'Panel Admin — Kelola Konten Sendiri', included: true },
       { label: 'Garansi Pemeliharaan 3 Bulan', included: true },
     ],
   },

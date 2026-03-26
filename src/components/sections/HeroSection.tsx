@@ -30,14 +30,16 @@ export default function HeroSection() {
       <motion.div
         className="absolute bottom-16 right-16 w-36 h-36 rounded-full border border-[#38BDF8]/15 hidden lg:block"
         animate={{ rotate: 360 }}
-        transition={{ duration: 24, repeat: Infinity, ease: 'linear' }}
+        transition={{ duration: 28, repeat: Infinity, ease: 'linear' }}
+        style={{ willChange: 'transform' }}
       >
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-[#38BDF8]/70" />
       </motion.div>
       <motion.div
         className="absolute bottom-24 right-24 w-20 h-20 rounded-full border border-[#38BDF8]/10 hidden lg:block"
         animate={{ rotate: -360 }}
-        transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        style={{ willChange: 'transform' }}
       />
 
       {/* Glowing orb - subtle */}
@@ -49,16 +51,6 @@ export default function HeroSection() {
 
           {/* ── Left column ── */}
           <div className="flex flex-col">
-
-            {/* Live badge */}
-            <motion.div
-              initial={{ opacity: 0, x: -16 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2.5 mb-8 self-start"
-            >
-              
-            </motion.div>
 
             {/* Headline */}
             <motion.h1
@@ -189,8 +181,9 @@ export default function HeroSection() {
               {/* Floating badge — SEO */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', repeatType: 'mirror' }}
                 className="absolute -top-5 -right-6 bg-white rounded-2xl px-4 py-3 shadow-2xl flex items-center gap-3"
+                style={{ willChange: 'transform' }}
               >
                 <div className="w-8 h-8 rounded-xl bg-green-100 flex items-center justify-center text-green-600 text-base font-bold">✓</div>
                 <div>
@@ -202,8 +195,9 @@ export default function HeroSection() {
               {/* Floating badge — Speed */}
               <motion.div
                 animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
+                transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.6, repeatType: 'mirror' }}
                 className="absolute -bottom-5 -left-6 bg-[#0d1b33] border border-[#38BDF8]/30 rounded-2xl px-4 py-3 shadow-2xl flex items-center gap-3"
+                style={{ willChange: 'transform' }}
               >
                 <div className="w-8 h-8 rounded-xl bg-[#38BDF8]/10 flex items-center justify-center text-[#38BDF8] text-base">⚡</div>
                 <div>
@@ -215,8 +209,9 @@ export default function HeroSection() {
               {/* Floating badge — Mobile */}
               <motion.div
                 animate={{ y: [0, -7, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.2 }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.2, repeatType: 'mirror' }}
                 className="absolute top-1/2 -translate-y-1/2 -left-10 bg-gradient-to-r from-[#1E40AF] to-[#2563EB] rounded-2xl px-4 py-3 shadow-2xl"
+                style={{ willChange: 'transform' }}
               >
                 <div className="text-white font-bold text-xs">Full Responsive</div>
               </motion.div>

@@ -16,7 +16,7 @@ export default function PortfolioSection({ items }: Props) {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {items.map((item, i) => (
-            <AnimatedSection key={item.id} delay={i * 0.08} direction="up">
+            <AnimatedSection key={item.id} delay={i * 0.06} direction="up">
               <div className="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-[#38BDF8]/50 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl hover:shadow-[#38BDF8]/10">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">

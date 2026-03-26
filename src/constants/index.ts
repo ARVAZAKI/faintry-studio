@@ -1,7 +1,7 @@
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://faintrystudio.com';
 export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME ?? 'Faintry Studio';
 
-export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '6281234567890';
+export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '6281230793317';
 export const WHATSAPP_MESSAGE =
   process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE ??
   'Halo Faintry Studio, saya ingin berkonsultasi mengenai pembuatan website.';

@@ -20,10 +20,10 @@ export default function PricelistSection({ packages }: Props) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           {packages.map((pkg, i) => (
-            <AnimatedSection key={pkg.id} delay={i * 0.1} direction="up">
+            <AnimatedSection key={pkg.id} delay={i * 0.07} direction="up">
               <motion.div
-                whileHover={{ y: -6 }}
-                transition={{ type: 'spring', stiffness: 300 }}
+                whileHover={{ y: -5 }}
+                transition={{ type: 'spring', stiffness: 320, damping: 24 }}
                 className={`relative flex flex-col h-full rounded-2xl border p-8 transition-shadow duration-300 ${
                   pkg.highlighted
                     ? 'bg-[#0A1628] border-[#38BDF8] shadow-2xl shadow-[#38BDF8]/20'
