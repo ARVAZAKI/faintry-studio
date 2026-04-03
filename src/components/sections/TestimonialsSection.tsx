@@ -1,6 +1,5 @@
 'use client';
 
-import { useRef } from 'react';
 import { motion } from 'framer-motion';
 
 type Testimonial = {
@@ -87,7 +86,7 @@ function StarRating({ count }: { count: number }) {
 
 function TestimonialCard({ item }: { item: Testimonial }) {
   return (
-    <div className="w-[320px] shrink-0 mx-3 bg-white/[0.05] border border-white/[0.08] rounded-2xl p-5 flex flex-col gap-4 hover:bg-white/[0.08] hover:border-[#38BDF8]/20 transition-colors duration-300">
+    <div className="w-[272px] sm:w-[320px] shrink-0 mx-3 bg-white/[0.05] border border-white/[0.08] rounded-2xl p-5 flex flex-col gap-4 hover:bg-white/[0.08] hover:border-[#38BDF8]/20 transition-colors duration-300">
       {/* Quote mark */}
       <svg className="w-6 h-6 text-[#38BDF8]/40 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -113,24 +112,19 @@ function TestimonialCard({ item }: { item: Testimonial }) {
 }
 
 function MarqueeRow({ items, reverse = false }: { items: Testimonial[]; reverse?: boolean }) {
-  const duration = items.length * 8;
   return (
     <div className="overflow-hidden">
-      <motion.div
+      <div
         className="flex"
-        animate={{ x: reverse ? ['0%', '50%'] : ['0%', '-50%'] }}
-        transition={{
-          duration,
-          repeat: Infinity,
-          ease: 'linear',
-          repeatType: 'loop',
+        style={{
+          animation: `${reverse ? 'marquee-right' : 'marquee-left'} 28s linear infinite`,
+          willChange: 'transform',
         }}
-        style={{ willChange: 'transform' }}
       >
         {items.map((item, i) => (
           <TestimonialCard key={`${item.business}-${i}`} item={item} />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }
