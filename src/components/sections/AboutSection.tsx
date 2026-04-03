@@ -80,7 +80,7 @@ export default function AboutSection() {
               <div className="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-white/10" />
               <div className="absolute -right-2 -bottom-2 w-16 h-16 rounded-full bg-white/5" />
               <p className="text-sm font-semibold leading-relaxed relative z-10">
-                &ldquo;Website bukan sekadar alamat online — ini adalah wajah bisnis Anda yang bekerja 24 jam sehari.&rdquo;
+                &ldquo;Website bukan sekadar alamat online, ini adalah wajah bisnis Anda yang bekerja 24 jam sehari.&rdquo;
               </p>
               <div className="mt-4 text-blue-200 text-xs font-medium relative z-10">— Tim Faintry Studio</div>
             </div>

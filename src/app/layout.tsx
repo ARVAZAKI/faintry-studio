@@ -61,6 +61,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  icons: {
+    icon: '/logofs.png',
+    shortcut: '/logofs.png',
+    apple: '/logofs.png',
+  },
 };
 
 /** JSON-LD structured data for Organization */
