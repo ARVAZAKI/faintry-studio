@@ -1,4 +1,4 @@
-import { HeroSection, AboutSection, PortfolioSection, PricelistSection } from "@/components/sections";
+import { HeroSection, AboutSection, PortfolioSection, TestimonialsSection, PricelistSection } from "@/components/sections";
 import { getPortfolioItems } from "@/services/portfolio.service";
 import { getPricingPackages } from "@/services/pricing.service";
 
@@ -13,6 +13,7 @@ export default async function Home() {
       <HeroSection />
       <AboutSection />
       <PortfolioSection items={portfolioItems} />
+      <TestimonialsSection />
       <PricelistSection packages={pricingPackages} />
     </>
   );

@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Web Development Studio`,
+    default: `${SITE_NAME} | Jasa Pembuatan Website Company Profile Profesional`,
     template: `%s | ${SITE_NAME}`,
   },
   description:

@@ -1,25 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS, SITE_NAME } from '@/constants';
-
-/** Geometric "F" logomark */
-function FaintryMark() {
-  return (
-    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
-      <rect width="30" height="30" rx="7" fill="url(#logo-grad)" />
-      <path d="M7 7h16v3.5H10.5v3.5H20v3.5H10.5V23H7V7Z" fill="white" />
-      <rect x="14" y="13" width="9" height="3.5" rx="1" fill="#38BDF8" />
-      <defs>
-        <linearGradient id="logo-grad" x1="0" y1="0" x2="30" y2="30" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#1E40AF" />
-          <stop offset="1" stopColor="#2563EB" />
-        </linearGradient>
-      </defs>
-    </svg>
-  );
-}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -70,12 +54,19 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => handleNavClick('#hero')}
-            className="flex items-center gap-2.5 group shrink-0"
+            className="flex items-center gap-3 group shrink-0"
             aria-label="Kembali ke atas"
           >
-            <FaintryMark />
-            <span className="text-white font-extrabold text-base tracking-tight group-hover:text-[#38BDF8] transition-colors duration-200">
-              {SITE_NAME}
+            <Image
+              src="/logofs.png"
+              alt={SITE_NAME}
+              width={52}
+              height={52}
+              className="rounded-xl object-contain"
+              priority
+            />
+            <span className="text-white font-extrabold text-lg tracking-tight group-hover:text-[#38BDF8] transition-colors duration-200">
+              Faintry Studio
             </span>
           </button>
 
