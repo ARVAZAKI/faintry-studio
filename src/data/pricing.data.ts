@@ -30,7 +30,7 @@ export const pricingData: PricingPackage[] = [
     price: 'Rp 1.000.000',
     priceNote: 'mulai dari',
     description:
-      'Website multi-halaman yang bisa Anda kelola dan perbarui sendiri kapan saja — tanpa perlu keahlian coding.',
+      'Website multi-halaman yang bisa Anda kelola dan perbarui sendiri kapan saja.',
     highlighted: true,
     ctaLabel: 'Pilih Paket Ini',
     features: [

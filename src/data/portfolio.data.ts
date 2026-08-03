@@ -3,11 +3,11 @@ import type { PortfolioItem } from '@/types';
 export const portfolioData: PortfolioItem[] = [
   {
     id: 'porto-1',
-    title: 'PT Nusantara Jaya',
+    title: 'Sigma Academy',
     description:
-      'Website company profile modern untuk perusahaan konstruksi dengan animasi scroll reveal dan desain yang elegan.',
-    imageUrl: 'https://placehold.co/600x400/0A1628/38BDF8?text=PT+Nusantara+Jaya',
-    liveUrl: '#',
+      'Website company profile modern untuk kelas belajar saham indonesia',
+    imageUrl: '/Portofolio/sigmaacademy.png',
+    liveUrl: 'https://sigmaacademy.id',
     tags: ['Company Profile', 'Next.js', 'Tailwind CSS'],
   },
   {
