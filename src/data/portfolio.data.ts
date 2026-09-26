@@ -42,7 +42,7 @@ export const portfolioData: PortfolioItem[] = [
     title: 'Kopi Senja',
     description:
       'Website untuk kedai kopi dengan menu digital, galeri suasana, dan integrasi pemesanan online.',
-    imageUrl: '/portofolio/cafe.png',
+    imageUrl: '/Portofolio/cafe.png',
     liveUrl: 'https://cafe.faintry.com',
     tags: ['Company Profile', 'Responsive', 'CMS'],
   },
@@ -51,7 +51,7 @@ export const portfolioData: PortfolioItem[] = [
     title: 'Svarna Wedding',
     description:
       'Portfolio interaktif untuk wedding organizer dengan galeri, testimoni, dan formulir pemesanan layanan.',
-    imageUrl: '/portofolio/wo.png',
+    imageUrl: '/Portofolio/wo.png',
     liveUrl: 'https://wo.faintry.com',
     tags: ['Portfolio', 'Animation', 'Next.js'],
   },
